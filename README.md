@@ -1,5 +1,7 @@
-sbt-doge
+sbt-strict-aggregation
 ========
+
+:bangbang: This is a fork of the original sbt-doge which only keep the strict aggregation feature. Once [sbt#3698](https://github.com/sbt/sbt/issues/3698) have been fixed, this plugin will be retired as well. :bangbang:
 
 :bangbang: **This plugin is retired.** sbt-doge has been merged in sbt 1. See [#18](https://github.com/sbt/sbt-doge/issues/18). :bangbang:
 

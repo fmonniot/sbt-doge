@@ -10,6 +10,7 @@ cache:
     - $HOME/.sbt/boot/scala-$TRAVIS_SCALA_VERSION
 
 script:
+  - sbt ++$TRAVIS_SCALA_VERSION test
   - sbt ++$TRAVIS_SCALA_VERSION -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M scripted
 
   # Tricks to avoid unnecessary cache updates

@@ -4,7 +4,7 @@ name := "sbt-partial-cross-build"
 
 organization := "eu.monniot"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.1.0"
 
 description := "sbt plugin to aggregate across crossScalaVerions for muilti-project builds"
 

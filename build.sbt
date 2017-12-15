@@ -20,12 +20,10 @@ scalacOptions := Seq(
 
 publishMavenStyle := false
 
-publishTo := {
-  if (version.value contains "-SNAPSHOT") Some(Resolver.sbtPluginRepo("snapshots"))
-  else Some(Resolver.sbtPluginRepo("releases"))
-}
+bintrayRepository := "sbt-plugins"
 
-credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
+// As the original plugin didn't had a license, I can't choose one like this
+bintrayOmitLicense := true
 
 scriptedLaunchOpts := {
   scriptedLaunchOpts.value ++
